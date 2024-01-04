@@ -1,10 +1,10 @@
-import TitleModule from "../../common/title";
+import TitleModule from "../common/title";
 
-class Modules{
+class DashboardPage{
 
   verificarModulo(functionality) {
     return cy.xpath(TitleModule.module(functionality))
   }
 }
 
-export default new Modules();
+export default new DashboardPage();

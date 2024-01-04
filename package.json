@@ -1,7 +1,7 @@
 {
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run --repoter-nyan"
+    "test": "cypress run --reporter nyan"
   },
   "devDependencies": {
     "cypress": "^13.3.2",

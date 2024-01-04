@@ -1,4 +1,4 @@
-import TitleModule from "../common/title";
+import TitleModule from "../common/titleElements";
 
 class DashboardPage{
 

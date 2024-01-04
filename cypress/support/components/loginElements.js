@@ -1,4 +1,4 @@
-class loginElements {
+class LoginElements {
 
   username = () => {return 'input[name="username"]'}
   password = () => {return 'input[name="password"]'}
@@ -6,4 +6,4 @@ class loginElements {
   buttonForgout = () => {return 'p'}
 }
 
-module.exports = new loginElements();
+module.exports = new LoginElements();

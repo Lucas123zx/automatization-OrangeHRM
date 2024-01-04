@@ -1,7 +1,6 @@
-
 import loginElements from "../components/loginElements"
 
-class loginPage {
+class LoginPage {
 
   Username(username) {
     return cy.get(loginElements.username()).type(username)
@@ -21,4 +20,4 @@ class loginPage {
 
 }
 
-export default new loginPage();
+export default new LoginPage();

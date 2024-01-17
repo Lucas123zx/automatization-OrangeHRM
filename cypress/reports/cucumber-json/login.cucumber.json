@@ -1,0 +1,63 @@
+[
+  {
+    "description": "  Logar com sucesso",
+    "keyword": "Feature",
+    "name": "Logar",
+    "line": 1,
+    "id": "logar",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "logar;logar-com-sucesso",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Logar com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "O usuário esteja na tela de login",
+            "result": {
+              "status": "passed",
+              "duration": 13356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "O usuário informar username \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 986000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "O usuário informar password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 3248000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "O usuário deve visualizar tela home com o \"Dashboard\"",
+            "result": {
+              "status": "passed",
+              "duration": 2174000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -12,8 +12,8 @@ module.exports = defineConfig({
     baseUrl:"https://opensource-demo.orangehrmlive.com/web/index.php/auth",
     chromeWebSecurity: true,
     viewportWidth: 1920,
-    viewportHeight: 1080
-    
+    viewportHeight: 1080,
+    supportFile: "cypress/support/plugins"
     
   },
 });

@@ -1,0 +1,110 @@
+[
+  {
+    "description": "  Cadastrar candidato ",
+    "keyword": "Feature",
+    "name": "Cadastro de Candidato",
+    "line": 2,
+    "id": "cadastro-de-candidato",
+    "tags": [],
+    "uri": "adicionarNovoCandidato.feature",
+    "elements": [
+      {
+        "id": "cadastro-de-candidato;cadastrar-candidato-com-sucesso",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Cadastrar candidato com sucesso",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "O usuário esteja na tela de login",
+            "result": {
+              "status": "passed",
+              "duration": 13236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "O usuário informar username \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 1171000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "O usuário informar password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 1692000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "O usuário deve visualizar tela home com o \"Dashboard\"",
+            "result": {
+              "status": "passed",
+              "duration": 2961000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "O usuário esteja na tela de novo candidato",
+            "result": {
+              "status": "passed",
+              "duration": 2552000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "O usuário informar Full Name \"Fulano de tal\"",
+            "result": {
+              "status": "undefined",
+              "duration": 596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "O usuário informar Middle Name \"de\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "O usuário informar Last Name \"tal\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "O usuário informar Last Name \"tal\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

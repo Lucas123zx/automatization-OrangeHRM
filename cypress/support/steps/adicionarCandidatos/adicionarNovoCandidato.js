@@ -1,4 +1,4 @@
-/* global Given, When, Then */
+import { Given,When,Then,And } from "cypress-cucumber-preprocessor/steps";
 
 import recruitmentPage from "../../pages/recruitmentPage";
 import panelSide from "../../pages/panelSide";

@@ -10,8 +10,8 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
       on('after:run', (results) => {
         if (results) {
-          fs.mkdirSync("cypress/.run", { recursive: true });
-          fs.writeFile("cypress/.run/results.json", JSON.stringify(results));
+          fs.mkdirSync("cypress/reports/.run", { recursive: true });
+          fs.writeFile("cypress/reports/.run/results.json", JSON.stringify(results));
         }
       })
     },

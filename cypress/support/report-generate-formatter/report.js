@@ -17,7 +17,7 @@ let mapOs = (os) => {
     }
 };
 
-fs.readFile('./cypress/.run/results.json', function read(err, data) {
+fs.readFile('./cypress/reports/.run/results.json', function read(err, data) {
     if (err) {
         throw err;
     }

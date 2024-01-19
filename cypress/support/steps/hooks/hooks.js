@@ -5,3 +5,6 @@ Given("O usuário esteja na tela de login", () => {
 }) 
 
 
+After(() => {
+  cy.screenshotTestsResults();
+})

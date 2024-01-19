@@ -14,6 +14,5 @@ And("O usuário informar password {string}", (password) => {
 
 Then("O usuário deve visualizar tela home com o {string}", (functionality) => {
   dashBoardPage.verificarModulo(functionality).should('contain', functionality)
-  cy.screenshot();
 });
 

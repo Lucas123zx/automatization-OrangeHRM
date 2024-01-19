@@ -1,13 +1,12 @@
 {
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run --reporter nyan & npm run reporter",
-    "reporter": "node cypress/report-generate-formatter/report.js"
+    "test": "cypress run --reporter nyan --browser chrome & npm run reporter",
+    "reporter": "node cypress/support/report-generate-formatter/report.js"
   },
   "devDependencies": {
     "cucumber-html-reporter": "^6.0.0",
-    "cypress": "^13.3.2",
-    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "cypress": "^12.4.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^2.0.1",
     "multiple-cucumber-html-reporter": "^3.6.1"
@@ -20,5 +19,6 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     },
-    "stepDefinitions": "cypress/support/steps"}
+    "stepDefinitions": "cypress/support/steps"
+  }
 }

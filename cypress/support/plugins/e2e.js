@@ -16,7 +16,6 @@
 // Import commands.js using ES2015 syntax:
 import '../commands/commands'
 require('cypress-xpath');
-import "cypress-cucumber-attach-screenshots-to-failed-steps";
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   // returning false here prevents Cypress from
@@ -26,3 +25,10 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+Cypress.Screenshot.defaults({
+  capture:'runner',
+  disableTimersAndAnimations: false,
+  overwrite: true,
+  scale: true,
+  screenshotOnRunFailure: false,
+})

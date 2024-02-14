@@ -2,8 +2,9 @@ node_modules
 build
 cypress/videos
 cypress/screenshots
-cypress/result
-cypress/report
-cypress/.run
+cypress/downloads
+cypress/reports/json
+cypress/reports/messages
+cypress/reports/.run
 .vscode
 .idea

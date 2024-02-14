@@ -30,5 +30,5 @@ Cypress.Screenshot.defaults({
   disableTimersAndAnimations: false,
   overwrite: true,
   scale: true,
-  screenshotOnRunFailure: false,
+  screenshotOnRunFailure: true,
 })

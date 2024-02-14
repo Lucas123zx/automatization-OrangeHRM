@@ -1,4 +1,3 @@
-
 class RecruitmentElements {
   buttonCandidates = () => {return "//a[normalize-space()='Candidates']"}
   buttonVacancies = () => {return "li[class='oxd-topbar-body-nav-tab']"}

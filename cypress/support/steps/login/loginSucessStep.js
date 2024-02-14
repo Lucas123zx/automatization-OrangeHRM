@@ -1,10 +1,10 @@
-import {Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import {Given, When, Then  } from "@badeball/cypress-cucumber-preprocessor";
 
 import loginPage from "../../pages/loginPage"
 import dashBoardPage from "../../pages/dashBoardPage";
 
 Given("O usuário esteja na tela de login", () => {
-  return cy.visit('/login')
+  cy.visit('/login')
 });
 
 When("O usuário informar username {string}", (username) => {
@@ -18,6 +18,7 @@ When("O usuário informar password {string}", (password) => {
 
 Then("O usuário deve visualizar tela home com o {string}", (functionality) => {
   dashBoardPage.verificarModulo(functionality).should('contain', functionality)
+  cy.screenshot();
 });
 
 

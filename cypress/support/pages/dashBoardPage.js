@@ -1,9 +1,9 @@
-import TitleModule from "../common/titleElements";
+import titleModuleElements from "../common/titleModuleElements";
 
 class DashboardPage{
 
   verificarModulo(functionality) {
-    return cy.xpath(TitleModule.module(functionality))
+    return cy.xpath(titleModuleElements.module(functionality))
   }
 }
 

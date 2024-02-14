@@ -21,8 +21,8 @@ let mapOs = (os) => {
 };
 
 report.generate({
-    jsonDir: 'cypress/reports/.run/json/',
-    reportPath: 'cypress/reports/.run/html-report/',
+    jsonDir: 'cypress/reports/json',
+    reportPath: 'cypress/reports/html-report',
     metadata:{
         browser: {
             name: runInfos.browserName === 'chromium' ? 'chrome' : runInfos.browserName,
@@ -37,8 +37,8 @@ report.generate({
         title: 'Run info',
         data: [
             {label: 'Project', value: 'Todolist'},
-            {label: 'Execution Start Time', value: new Date(runInfos.startedTestsAt).toLocaleString()},
-            {label: 'Execution End Time', value: new Date(runInfos.endedTestsAt).toLocaleString()}
+            {label: 'Execution Start Time', value: new Date(runInfos.startedTestsAt).toLocaleString('pt-BR')},
+            {label: 'Execution End Time', value: new Date(runInfos.endedTestsAt).toLocaleString('pt-BR')}
         ]
     }
 });

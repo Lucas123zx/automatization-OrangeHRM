@@ -17,6 +17,7 @@ const setupNodeEvents = async (on, config) => {
   on('after:run', async (results) => {
     if (results) {
       await afterRunHandler(config)
+      fs.mkdirSync("cypress/reports/.run", { recursive: true });
       fs.writeFile("cypress/reports/.run/results.json", JSON.stringify(results));
     }
   });

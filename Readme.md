@@ -53,10 +53,12 @@
 {
  "scripts": {
     "cy:open": "cypress open --env version=environment_variable",
-    "test-chrome": "cypress run --env version=environment_variable --browser chrome",
+    "test-chrome": "cypress run --env version=environment_variable --browser chrome"
   }
 }
 ```
+
+rodar comando no Terminal: `npm run cy:open` --interativo ou `npm run test-chrome` --headless no browser chrome
 
   
 

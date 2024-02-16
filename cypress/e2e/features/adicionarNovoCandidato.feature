@@ -5,8 +5,7 @@ Feature: Cadastro de Candidato
 
   Background: usuario esteja logado no sistema
     Given O usuário esteja na tela de login
-    When O usuário informar username "Admin"
-    And O usuário informar password "admin123"
+    When O usuário informe credenciais válidas
     Then O usuário deve visualizar tela home com o "Dashboard" 
   Scenario: Cadastrar candidato com sucesso
     Given O usuário esteja na tela de novo candidato

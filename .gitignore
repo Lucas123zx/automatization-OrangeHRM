@@ -8,3 +8,4 @@ cypress/reports/messages
 cypress/reports/.run
 .vscode
 .idea
+cypress.env.json

@@ -7,13 +7,10 @@ Given("O usuário esteja na tela de login", () => {
   cy.visit('/login')
 });
 
-When("O usuário informar username {string}", (username) => {
-  loginPage.Username(username)
-});
-
-When("O usuário informar password {string}", (password) => {
-  loginPage.Password(password)
-  loginPage.Login();
+When("O usuário informe credenciais válidas", () => {
+  loginPage.Username()
+  loginPage.Password()
+  loginPage.Login()
 });
 
 Then("O usuário deve visualizar tela home com o {string}", (functionality) => {

@@ -7,6 +7,12 @@ const fs = require('fs');
 const setupNodeEvents = async (on, config) => {
   await addCucumberPreprocessorPlugin(on, config); 
 
+  const version = config.env.version || 'local';
+
+    config.env.baseUrl = config.env[version].baseUrl;
+    config.env.user = config.env[version].user;
+    config.env.password = config.env[version].password;
+
   on(
     "file:preprocessor",
     createBundler({
@@ -36,6 +42,5 @@ module.exports = defineConfig({
     viewportHeight: 1080,
     supportFile: "cypress/support/plugins/e2e.js",
     screenshotsFolder: "cypress/screenshots"
-
   },
 });

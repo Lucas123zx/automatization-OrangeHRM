@@ -2,12 +2,12 @@ import loginElements from "../components/loginElements"
 
 class LoginPage {
 
-  Username(username) {
-    cy.get(loginElements.username()).type(username)
+  Username() {
+    cy.get(loginElements.username()).type(Cypress.env('user'))
   }
 
-  Password(password) {
-    cy.get(loginElements.password()).type(password)
+  Password() {
+    cy.get(loginElements.password()).type(Cypress.env('password'))
   }
 
   Login() {

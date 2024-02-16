@@ -28,7 +28,7 @@ report.generate({
             name: runInfos.browserName === 'chromium' ? 'chrome' : runInfos.browserName,
             version: runInfos.browserVersion
         },
-        device: 'Cypress',
+        device: 'Computer',
         platform: {
             name: mapOs(runInfos.osName)
         }

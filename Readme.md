@@ -51,10 +51,10 @@
 
 ```json
 {
-"scripts": {
+ "scripts": {
     "cy:open": "cypress open --env version=environment_variable",
     "test-chrome": "cypress run --env version=environment_variable --browser chrome",
-  },
+  }
 }
 ```
 

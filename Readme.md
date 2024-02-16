@@ -47,7 +47,7 @@
 ---
 ## Modificando script de execução
 
-1. Modifica script de execução no arquivo **packgae.json** 
+1. Modifica script de execução no arquivo **package.json** 
 
 ```json
 {

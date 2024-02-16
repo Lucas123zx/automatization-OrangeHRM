@@ -4,7 +4,7 @@
 
 ---
 
-## Pré-Ambiente para Exeução
+## Pré-Ambiente para Execução
  - Vscode
  - Node
  1. Clonar projeto: `git clone git@github.com:Lucas123zx/automatization-OrangeHRM.git`

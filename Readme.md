@@ -45,7 +45,7 @@
 }
 ```
 ---
-## Modificando scipt de exwecução
+## Modificando script de execução
 
 1. Modifica script de execução no arquivo **packgae.json** 
 
